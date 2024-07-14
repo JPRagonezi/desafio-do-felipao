@@ -1,1 +1,3 @@
-console.log("Supimpa");
+let nome = "Supimpa";
+console.log(nome);
+
