@@ -1,6 +1,6 @@
 // variaveis 
 let playerName = "Daniel Paladino"
-let playerExperience = 7054
+let playerExperience = 11454
 let experienceTier = undefined;
 
 // for
@@ -23,7 +23,7 @@ if (playerExperience <= 1000) {
     experienceTier = "Ascendent"
 }else if (playerExperience <= 9001) {
     experienceTier = "Immortal"
-}else if (playerExperience <= 10001) {
+}else if (playerExperience >= 10001) {
     experienceTier = "Radiant"
 }
 
