@@ -1,6 +1,6 @@
 // variaveis 
 let playerName = "Daniel Paladino"
-let playerExperience = 11454
+let playerExperience = 8002
 let experienceTier = undefined;
 
 // for
@@ -9,22 +9,34 @@ for (let experienceGained = 0; experienceGained <= playerExperience; experienceG
 }
 
 // estruturas de decisões
-if (playerExperience <= 1000) {
-    experienceTier = "Ferro";
-}else if (playerExperience <= 2001) {
-    experienceTier = "Bronze";
-}else if (playerExperience <= 3001) {
-    experienceTier = "Silver"
-}else if (playerExperience <= 6001) {
-    experienceTier = "Gold"
-}else if (playerExperience <= 7001) {
-    experienceTier = "Platinum"
-}else if (playerExperience <= 8001) {
-    experienceTier = "Ascendent"
-}else if (playerExperience <= 9001) {
-    experienceTier = "Immortal"
-}else if (playerExperience >= 10001) {
-    experienceTier = "Radiant"
+switch(playerExperience > 0){
+    case (playerExperience <= 1000) :
+        experienceTier = "Iron" ;
+        break;
+    case (playerExperience >= 1001 && playerExperience <= 2000) :
+        experienceTier = "Bronze" ;
+        break;
+    case (playerExperience >= 2001 && playerExperience <= 3000) :
+        experienceTier = "Silver" ;
+        break;
+    case (playerExperience >= 3001 && playerExperience <= 4000) :
+        experienceTier = "Gold" ;
+        break;
+    case (playerExperience >= 4001 && playerExperience <= 5000) :
+        experienceTier = "Platinum" ;
+        break;
+    case (playerExperience >= 5001 && playerExperience <= 6000) :
+        experienceTier = "Ascendent" ;
+        break;
+    case (playerExperience >= 6001 && playerExperience <= 7000) :
+        experienceTier = "Immortal" ;
+        break;
+    case (playerExperience >= 7001) :
+        experienceTier = "Radiant" ;
+        break;
+    default: 
+        experienceTier = "Unranked";
+        break;
 }
 
 console.log("Has a total of " + playerExperience + " experience points.");
